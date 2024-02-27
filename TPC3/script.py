@@ -18,8 +18,9 @@ def handle(calculator):
 def main():
     calculator = []
     with open('file.txt','r') as file:
+        regex = re.compile(r'(on)|(off)|(\d+)|(=)',re.I)
         for line in file:
-            for keyword in re.findall(r'(on)|(off)|(\d+)|(=)',line,re.I):
+            for keyword in regex.findall(line):
                 for match in keyword:
                     if match:
                         calculator.append(match.lower())
