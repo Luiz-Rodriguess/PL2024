@@ -1,0 +1,2 @@
+SELECT id, nome, salario
+FROM empregados WHERE salario >= 820

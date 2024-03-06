@@ -14,16 +14,13 @@ def handle(calculator):
             if mode:
                 total += int(item)
 
-
 def main():
     calculator = []
     with open('file.txt','r') as file:
-        regex = re.compile(r'(on)|(off)|(\d+)|(=)',re.I)
+        regex = re.compile(r'(on|off|\d+|=)',re.I)
         for line in file:
             for keyword in regex.findall(line):
-                for match in keyword:
-                    if match:
-                        calculator.append(match.lower())
+                calculator.append(keyword.lower())
 
     handle(calculator)
 if __name__ == '__main__':
