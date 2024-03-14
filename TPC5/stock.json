@@ -1,0 +1,64 @@
+{
+  "stock": [
+    {
+      "cod": "A23",
+      "nome": "\u00c1gua 0.5L",
+      "quant": 8,
+      "preco": 0.7
+    },
+    {
+      "cod": "B12",
+      "nome": "Coca-Cola Lata",
+      "quant": 12,
+      "preco": 1.2
+    },
+    {
+      "cod": "C45",
+      "nome": "Bolacha Maria",
+      "quant": 5,
+      "preco": 0.5
+    },
+    {
+      "cod": "D78",
+      "nome": "Chocolate Snickers",
+      "quant": 10,
+      "preco": 1.5
+    },
+    {
+      "cod": "E91",
+      "nome": "Pastilha Trident",
+      "quant": 15,
+      "preco": 0.8
+    },
+    {
+      "cod": "F34",
+      "nome": "Batata Chips",
+      "quant": 7,
+      "preco": 1.0
+    },
+    {
+      "cod": "G56",
+      "nome": "Barra de Cereal",
+      "quant": 20,
+      "preco": 0.9
+    },
+    {
+      "cod": "H67",
+      "nome": "Ma\u00e7\u00e3",
+      "quant": 6,
+      "preco": 0.6
+    },
+    {
+      "cod": "I78",
+      "nome": "Sandu\u00edche de Frango",
+      "quant": 3,
+      "preco": 2.5
+    },
+    {
+      "cod": "J89",
+      "nome": "Saco de Amendoim",
+      "quant": 9,
+      "preco": 1.2
+    }
+  ]
+}
