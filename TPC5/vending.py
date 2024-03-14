@@ -2,6 +2,7 @@ import ply.lex as lex
 from stock import loadStock, saveStock
 from datetime import date
 from Item import Item
+import re
 
 add = False
 total = 0
@@ -212,13 +213,11 @@ def t_MOEDA(t):
     return t
 
 def t_MONEY(t):
-    r'(2e|1e|50c|20c|10c|5c|2c|1c)'
+    r'(2e|1e|50c|20c|10c|5c|2c|1c)(,\ |\ \.)'
     global add
     global total
     if add:
-        aux = list(t.value)
-        aux.pop()
-        aux = ''.join(aux)
+        aux = re.findall(r'\d+',t.value).pop()
         if 'e' in t.value:
             total += int(aux) *100
         elif 'c' in t.value:
